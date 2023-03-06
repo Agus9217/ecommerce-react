@@ -1,3 +1,10 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+  :root {
+    --gradient: linear-gradient( to right, #ff3c5f, #9340ff );
+  }
+
 * {
   text-decoration: none;
   list-style: none;
@@ -11,3 +18,4 @@
 body {
   background: #101728;
 }
+`
