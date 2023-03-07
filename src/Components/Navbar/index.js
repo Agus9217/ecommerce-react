@@ -3,14 +3,14 @@ import { NavbarCart, NavbarContainer, NavbarImg, NavbarItem, NavbarLink, NavbarL
 import ImgLogo from '../../assets/images/logo.png'
 import { FiMenu } from 'react-icons/fi'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <NavbarContainer>
       <NavbarLogo>
         <NavbarImg src={ ImgLogo } />
         <NavbarTitle> Kinnectric </NavbarTitle>
       </NavbarLogo>
-      <NavbarMobileIcon>
+      <NavbarMobileIcon onClick={ toggle } >
         <FiMenu />
       </NavbarMobileIcon>
       <NavbarMenu>

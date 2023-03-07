@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   :root {
     --gradient: linear-gradient( to right, #ff3c5f, #9340ff );
+    --body-background: #101728;
   }
 
 * {
@@ -16,6 +17,6 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body {
-  background: #101728;
+  background: var(--body-background);
 }
 `
